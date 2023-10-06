@@ -9,8 +9,6 @@ import java.util.List;
 
 public interface ProductService {
 
-    //List<Product> getAllProducts();
-
     Page<Product> getAllProductsByCategory(String category,int pageNo, int pageSize, String sortBy);
     Page<Product> getAllProductsByCategoryAndSubcategory(String category, String subCategory,int pageNo, int pageSize, String sortBy);
 

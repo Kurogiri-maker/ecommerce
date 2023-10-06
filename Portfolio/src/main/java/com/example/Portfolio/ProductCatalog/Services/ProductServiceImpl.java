@@ -23,12 +23,6 @@ public class ProductServiceImpl implements ProductService{
         this.productRepository=repository;
     }
 
-    /*
-    @Override
-    public List<Product> getAllProducts(){
-        return productRepository.findAll();
-    }
-    */
 
     @Override
     public Page<Product> getAllProductsByCategory(String category,int pageNo, int pageSize, String sortBy){
